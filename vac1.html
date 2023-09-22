@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de Empleo</title>
+    <link rel="stylesheet" type="text/css" href="style2.css">
+</head>
+
+<body>
+    <img src="logobanpan.png" alt="Banner" class="banner-image">
+    <h1>Solicitud de Empleo</h1>
+
+    <div class="formulario">
+        <form action="procesar_solicitud.php" method="POST" enctype="multipart/form-data">
+            <div class="campo">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+
+            <div class="campo">
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+            </div>
+
+            <div class="campo">
+                <label for="vacante">Vacante:</label>
+                <input type="text" id="vacante" name="vacante" required>
+            </div>
+
+            <div class="campo">
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fecha" name="fecha" required>
+            </div>
+
+            <div class="campo">
+                <label for="archivo">Adjuntar archivo:</label>
+                <input type="file" id="archivo" name="archivo" accept=".pdf, .doc, .docx">
+            </div>
+
+            <div class="boton-enviar">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

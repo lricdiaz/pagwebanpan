@@ -1,0 +1,113 @@
+/* styles.css */
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos de la vacante */
+.vacante {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px 0;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.vacante:hover {
+    transform: translateY(-5px);
+}
+
+.vacante a {
+    text-decoration: none;
+    color: #333;
+}
+
+.vacante h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.vacante p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.vacante img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+/* Estilos de botones */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos de encabezado */
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 36px;
+}
+
+.header p {
+    font-size: 18px;
+}
+
+/* Estilos de pie de página */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .vacante {
+        padding: 10px;
+    }
+
+    .header h1 {
+        font-size: 24px;
+    }
+
+    .header p {
+        font-size: 16px;
+    }
+
+    .footer p {
+        font-size: 14px;
+    }
+}
